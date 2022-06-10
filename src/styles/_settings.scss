@@ -1,0 +1,44 @@
+* {    
+    box-sizing: border-box;   
+    margin: 0;    
+    padding: 0;
+    align-items: center;
+    font-family: system-ui;
+}
+
+$color-1: #20232a;
+$color-2: rgb(126, 67, 141);
+$color-3: radial-gradient(circle, rgba(238,174,202,0.13310860058309038) 0%, rgba(148,187,233,0.1360240524781341) 100%);
+$color-4:white;
+
+body{
+    background-color: white;
+    overflow:hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited {
+    color: $color-1;
+}
+
+h1{
+    font-size: 5vmin;
+}
+
+li{
+    font-size: 2.5vmin;
+}
+
+.zone-1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

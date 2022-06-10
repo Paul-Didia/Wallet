@@ -1,0 +1,83 @@
+.header {
+    
+    div {
+        position: relative;
+        display: flex;
+        text-align: center;
+        margin-bottom: 2vh;
+        justify-content: space-between;
+        background: $color-3;
+    }
+
+    ul {
+        position: relative;
+        display: flex;
+        margin-left:5vw;
+    }
+
+    h1 {
+        position: relative;
+        margin: 5vmin;
+        margin-right: 7vw;
+        color: $color-2;
+    }
+
+    a {
+        margin: 3vmin;
+    }
+
+    /*------------------------------------------------Ordinateur-------------------------------------------------------------*/
+    @media screen and (min-width: 480px)
+    {
+        li{
+            font-size: 2.5vmin;
+        }
+
+        .active{
+            &::after{
+                content: " ";
+                width: 5vmin;
+                height: 0.3vh;
+                background: $color-2;
+                border-radius: 10vw;
+                position: absolute;
+                transform: translateX(-50%);
+                transition: 0.3s;
+            }
+        }
+
+    }
+
+    /*------------------------------------------------Téléphone-------------------------------------------------------------*/
+    @media screen and (max-width: 480px)
+    {
+        li{
+            font-size: 3.5vw;
+        }
+
+        .active{
+            &::after{
+                content: " ";
+                width: 7vmin;
+                height: 0.3vh;
+                background: $color-2;
+                border-radius: 10vw;
+                position: absolute;
+                transform: translateX(-50%);
+                transition: 0.3s;
+            }
+        }
+
+        img{
+            position: absolute;
+            margin-right: 25vmin;
+            right: 0px;
+            height: 5vw;
+            width: 5vw;
+        }
+
+    }
+
+
+
+}
